@@ -4,9 +4,14 @@
     <string name="title">Wishy</string>
 
     <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
+        <item>Wish Lists</item>
+        <item>Settings</item>
+        <item>Rate Us</item>
+        <item>Contact Us</item>
     </string-array>
+    <!--<integer-array name="random_imgs">-->
+        <!--<item>@drawable/</item>-->
+        <!--<item>@drawable/balloon_random_02</item>-->
+        <!--<item>@drawable/dog_03</item>-->
+    <!--</integer-array>-->
 </resources>
