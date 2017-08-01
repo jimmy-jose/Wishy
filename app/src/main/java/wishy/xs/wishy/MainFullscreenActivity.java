@@ -39,7 +39,7 @@ public class MainFullscreenActivity extends AppCompatActivity {
         mDrawerList.setAdapter(new ArrayAdapter<>(this,
                 R.layout.drawer_list_item, mPlanetTitles));
         // Set the list's click listener
-//        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
     }
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
