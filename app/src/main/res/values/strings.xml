@@ -3,15 +3,16 @@
     <string name="app_name">Wishy</string>
     <string name="title">Wishy</string>
 
-    <string-array name="planets_array">
+    <string-array name="listItemTitles">
         <item>Wish Lists</item>
         <item>Settings</item>
         <item>Rate Us</item>
         <item>Contact Us</item>
     </string-array>
-    <!--<integer-array name="random_imgs">-->
-        <!--<item>@drawable/</item>-->
-        <!--<item>@drawable/balloon_random_02</item>-->
-        <!--<item>@drawable/dog_03</item>-->
-    <!--</integer-array>-->
+    <integer-array name="listItemIcons">
+        <item>@drawable/ic_home_black_24dp</item>
+        <item>@drawable/ic_build_black_24dp</item>
+        <item>@drawable/ic_star_half_black_24dp</item>
+        <item>@drawable/ic_email_black_24dp</item>
+    </integer-array>
 </resources>

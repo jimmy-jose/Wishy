@@ -35,31 +35,16 @@ public class DrawerCustomAdapter extends BaseAdapter {
     }
 
     @Override
-    public int getCount() {
-        return rowItems.size();
-    }
-
-    @Override
-    public Object getItem(int i) {
-        return rowItems.get(i);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return rowItems.indexOf(getItem(i));
-    }
-
-    @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder holder = null;
 
         LayoutInflater mInflater = (LayoutInflater)
                 mContext.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if (view == null) {
-            view = mInflater.inflate(R.layout.drawer_list_item, null);
+            view = mInflater.inflate(R.layout.drawer_list_item, viewGroup,false);
             holder = new ViewHolder();
-            holder.txtTitle = view.findViewById(R.id.title);
-            holder.imageView = view.findViewById(R.id.icon);
+            holder.txtTitle = view.findViewById(R.id.item_text);
+            holder.imageView = view.findViewById(R.id.item_icon);
             view.setTag(holder);
         }
         else {
@@ -74,4 +59,18 @@ public class DrawerCustomAdapter extends BaseAdapter {
         return view;
     }
 
+    @Override
+    public int getCount() {
+        return rowItems.size();
+    }
+
+    @Override
+    public Object getItem(int i) {
+        return rowItems.get(i);
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return rowItems.indexOf(getItem(i));
+    }
 }
