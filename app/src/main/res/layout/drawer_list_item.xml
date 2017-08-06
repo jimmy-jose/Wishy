@@ -2,7 +2,7 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorAccent">
+    android:background="@drawable/drawable_item_selector">
     <ImageView
         android:id="@+id/item_icon"
         android:layout_marginStart="20dp"
@@ -15,9 +15,9 @@
         android:layout_toEndOf="@+id/item_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorMidnightBlue"
         android:layout_centerVertical="true"
-        android:textSize="20sp"
+        android:textSize="13sp"
         android:text="test"
         android:gravity="center"
         android:layout_marginBottom="20dp"

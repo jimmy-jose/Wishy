@@ -3,13 +3,6 @@
     android:id="@+id/content_frame"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    tools:context="wishy.xs.wishy.MainFullscreenActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Test"
-        android:textSize="50sp"
-        android:gravity="center"
-        android:layout_centerInParent="true"/>
+    android:background="@color/colorMilkyWhite"
+    tools:context="wishy.xs.wishy.activities.MainFullscreenActivity">
 </RelativeLayout>

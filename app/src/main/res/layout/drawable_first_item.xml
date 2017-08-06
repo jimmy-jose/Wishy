@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="100dp"
+    android:background="@color/colorMidnightBlue">
     <ImageView
+        android:id="@+id/list_header_icon"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_centerVertical="true"
         android:background="@drawable/ic_launcher"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New LAyout"/>
-
-
-</LinearLayout>
+        android:layout_toEndOf="@+id/list_header_icon"
+        android:layout_marginStart="22dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorMilkyWhite"
+        android:text="New Layout"/>
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package wishy.xs.wishy.Beans;
+package wishy.xs.wishy.beans;
 
 /**
  * Created by Jimmy on 8/1/2017.

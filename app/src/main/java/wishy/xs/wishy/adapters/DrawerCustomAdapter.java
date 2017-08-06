@@ -1,4 +1,4 @@
-package wishy.xs.wishy.Adapters;
+package wishy.xs.wishy.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import wishy.xs.wishy.Beans.RowItem;
+import wishy.xs.wishy.beans.RowItem;
 import wishy.xs.wishy.R;
 
 /**

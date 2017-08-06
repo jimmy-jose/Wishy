@@ -1,4 +1,4 @@
-package wishy.xs.wishy;
+package wishy.xs.wishy.activities;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -8,14 +8,15 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import wishy.xs.wishy.Adapters.DrawerCustomAdapter;
-import wishy.xs.wishy.Beans.RowItem;
+import wishy.xs.wishy.adapters.DrawerCustomAdapter;
+import wishy.xs.wishy.beans.RowItem;
+import wishy.xs.wishy.fragments.AddWishListFragment;
+import wishy.xs.wishy.R;
 
 public class MainFullscreenActivity extends AppCompatActivity {
 
@@ -39,6 +40,13 @@ public class MainFullscreenActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
 
         setContentView(R.layout.drawer_menu);
+
+        Fragment fragment = new AddWishListFragment();
+        // Insert the fragment by replacing any existing fragment
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .add(R.id.content_frame, fragment,"WIshlists")
+                .commit();
 
         listItemTitles = getResources().getStringArray(R.array.listItemTitles);
         listItemIcons = getResources().obtainTypedArray(R.array.listItemIcons);

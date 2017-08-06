@@ -4,10 +4,10 @@
     <string name="title">Wishy</string>
 
     <string-array name="listItemTitles">
-        <item>Wish Lists</item>
-        <item>Settings</item>
-        <item>Rate Us</item>
-        <item>Contact Us</item>
+        <item>W i s h  L i s t s</item>
+        <item>S e t t i n g s</item>
+        <item>R a t e  U s</item>
+        <item>C o n t a c t  U s</item>
     </string-array>
     <integer-array name="listItemIcons">
         <item>@drawable/ic_home_black_24dp</item>
